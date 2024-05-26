@@ -1,0 +1,48 @@
+# Start of Selection
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Archivos de dependencias
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de cobertura de pruebas
+coverage/
+htmlcov/
+
+# Archivos de caché
+.cache/
+tmp/
+
+# Archivos de configuración de sistema operativo
+*.swp
+*.swo
+
+# Archivos de migraciones de Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+# End of Selection

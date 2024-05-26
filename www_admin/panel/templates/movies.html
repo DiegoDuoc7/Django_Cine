@@ -1,0 +1,46 @@
+{% extends 'index_master.html' %}
+{% load static %}
+{% block content %}
+<div class="movie-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <br>
+        <br>
+        <img src="{% static imagen_url %}" alt="{{ movie.title }}" class="img-fluid" >
+        </div>
+      <div class="col-md-6 col-sm-12">
+        <br>
+        <br>
+        <br>
+        <h2>{{ movie.title }}</h2>
+        <p><strong>Género:</strong> {{ movie.genre }}</p>
+        <p><strong>Año:</strong> {{ movie.year }}</p>
+        <p><strong>Duración:</strong> {{ movie.duration }} minutos</p>
+        <p><strong>Director:</strong> {{ movie.director }}</p>
+        <p><strong>Actores:</strong> {{ movie.actors }}</p>
+        <p><strong>Sinopsis:</strong> {{ movie.synopsis }}</p>
+        <div>
+          <h3 style="text-align: center;">Tráiler</h3>
+          <div class="trailer-container" style="margin-top: 20px; max-width: 100%; margin-left: auto; margin-right: auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <video width="100%" height="auto" controls>
+              <source src="{% static movie.trailerUrl %}" type="video/mp4">
+              Tu navegador no soporta la etiqueta de vídeo.
+            </video>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-12" style="display: flex; justify-content: center;">
+        <div style="width: 100%; max-width: 600px;">
+          <h3 style="text-align: center;">Compra de Tickets</h3>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
