@@ -11,6 +11,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('destacadas/', views.destacadas, name='destacadas'),
+    path('cart/', views.cart, name='cart'),
+    path('delete_ticket/<int:Id>/', views.delete_ticket, name='delete_ticket'),
 ]
 
 if settings.DEBUG:

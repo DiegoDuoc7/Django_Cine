@@ -1,0 +1,42 @@
+{% extends 'index_master.html' %}
+{% block content %}
+
+<body>
+<div class="container mt-5">
+  <br>
+  <h2 class="text-center text-primary mb-4">Tu Carrito</h2>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre de la Película</th>
+          <th scope="col">Tipo de Ticket</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ticket in tickets %}
+          <tr>
+            <td>{{ ticket.Id }}</td>
+            <td>{{ ticket.movieName }}</td>
+            <td>{{ ticket.type }}</td>
+            <td>{{ ticket.quantity }}</td>
+            <td>
+              <a href="{% url 'delete_ticket' ticket.Id %}" class="btn btn-danger">Eliminar</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="text-center mt-3">
+        <br>
+      <h4>Total a pagar: {{ total }}</h4>
+      <br>
+    </div>
+  </div>
+
+</div>
+</body>
+{% endblock %}

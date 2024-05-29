@@ -36,7 +36,11 @@
       <div class="col-md-12" style="display: flex; justify-content: center;">
         <div style="width: 100%; max-width: 600px;">
           <h3 style="text-align: center;">Compra de Tickets</h3>
-         
+          <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="btn btn-primary">Comprar</button>
+          </form>
         </div>
       </div>
     </div>

@@ -34,3 +34,12 @@ class Contacto(models.Model):
 
     def __str__(self):
         return self.name
+
+class Ticket(models.Model):
+    Id = models.IntegerField(primary_key=True)
+    movieName = models.CharField(max_length=100)
+    type = models.CharField(max_length=10, choices=[('child', 'Child'), ('adult', 'Adult')])
+    quantity = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.movieName} - {self.type} - {self.quantity}"
