@@ -41,6 +41,13 @@
             {{ form }}
             <button type="submit" class="btn btn-primary">Comprar</button>
           </form>
+          {% if messages %}
+          <ul>
+              {% for message in messages %}
+                  <li>{{ message }}</li>
+              {% endfor %}
+          </ul>
+      {% endif %}
         </div>
       </div>
     </div>

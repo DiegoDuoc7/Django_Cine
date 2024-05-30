@@ -7,7 +7,7 @@ class ContactForm(forms.ModelForm):
         fields = ['name', 'email', 'message']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control', 'minlength': 3}),
-            'email': forms.EmailInput(attrs={'class': 'form-control', 'pattern': '^[^@]+@[^@]+$'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control', 'pattern': '^[^@]+@[^@]*mail[^@]*$'}),
             'message': forms.Textarea(attrs={'class': 'form-control', 'minlength': 10}),
         }
         error_messages = {

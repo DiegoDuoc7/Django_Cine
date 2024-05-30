@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.http import Http404, HttpResponse
+from django.contrib import messages
 from panel.models import Pelicula, Ticket
 from panel.forms.contacto_form import ContactForm
 from panel.forms.ticket_form import TicketForm
@@ -27,6 +28,8 @@ def movies(request, movie_id):
         form = TicketForm(request.POST, initial={'movieName': pelicula.title})
         if form.is_valid():
             form.save()
+            messages.success(request, 'Se ha comprado la orden correctamente al carrito')
+
     else:
         form = TicketForm(initial={'movieName': pelicula.title})
     return render(request, 'movies.html', {'movie': pelicula, 'imagen_url': url, 'form': form})
@@ -38,6 +41,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Tu solicitud de contacto ha sido enviada exitosamente.')
             # Aquí puedes agregar lógica adicional, como enviar un correo electrónico
     else:
         form = ContactForm()

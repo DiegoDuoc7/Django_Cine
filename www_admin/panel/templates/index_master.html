@@ -6,7 +6,7 @@
     <title>{% block title %}Cine Brando Vera{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
   <style>
     #menu {
       position: fixed;
@@ -29,7 +29,7 @@
   </style>
   <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: gold;">Nuestro Cine</a>
+      <a class="navbar-brand" href="/index" style="color: gold;">Nuestro Cine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,14 +56,14 @@
   </nav>
   
   
-    <div class="container mt-5">
+    <div class="container mt-5" style="flex-grow: 1;">
       
         {% block content %}
         <!-- Contenido de la página -->
         {% endblock %}
     </div>
 </body>
-<footer class="text-center py-4 bg-dark text-light">
+<footer class="text-center py-4 bg-dark text-light" style="width: 100%;">
   <div class="container">
     <p>© 2023 CineDiege. Todos los derechos reservados.</p>
     <p>Descubre las mejores películas y estrenos exclusivos en nuestras salas.</p>
