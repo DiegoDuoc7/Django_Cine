@@ -1,9 +1,11 @@
 
-{% extends 'index_master.html' %}
 {% load static %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
 {% block content %}
 
-<form method="post" action="{% url 'register' %}" class="container mt-5">
+<form method="post" action="{% url 'register' %}" class="container mt-5" style="padding-top: 150px;">
     {% csrf_token %}
     <div class="card shadow-lg">
         <div class="card-header bg-primary text-white text-center">
