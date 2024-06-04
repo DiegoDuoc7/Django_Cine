@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
 </head>
 <body>
+    <br><br>
     <h1>Formulario de Contacto</h1>
     <form method="post">
         {% csrf_token %}
@@ -23,6 +24,7 @@
             {% endfor %}
         </ul>
     {% endif %}
+    <br><br>
 </body>
 </html>
 {% endblock %}

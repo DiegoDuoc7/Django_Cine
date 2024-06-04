@@ -6,9 +6,14 @@ class TicketForm(forms.ModelForm):
         model = Ticket
         fields = ['movieName', 'type', 'quantity']
         widgets = {
-            'movieName': forms.TextInput(attrs={'class': 'form-control'}),
+            'movieName': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
             'type': forms.Select(attrs={'class': 'form-control'}),
             'quantity': forms.NumberInput(attrs={'class': 'form-control', 'min': 1}),
+        }
+        labels = {
+            'movieName': 'Nombre de la Película',
+            'type': 'Tipo',
+            'quantity': 'Cantidad',
         }
         error_messages = {
             'movieName': {
@@ -22,4 +27,3 @@ class TicketForm(forms.ModelForm):
                 'min': 'La cantidad debe ser al menos 1.',
             },
         }
-

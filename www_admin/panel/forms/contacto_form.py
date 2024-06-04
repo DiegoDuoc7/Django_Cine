@@ -10,6 +10,11 @@ class ContactForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'class': 'form-control', 'pattern': '^[^@]+@[^@]*mail[^@]*$'}),
             'message': forms.Textarea(attrs={'class': 'form-control', 'minlength': 10}),
         }
+        labels = {
+            'name': 'Nombre',
+            'email': 'Correo Electrónico',
+            'message': 'Mensaje',
+        }
         error_messages = {
             'name': {
                 'required': 'Este campo es obligatorio.',
@@ -25,4 +30,3 @@ class ContactForm(forms.ModelForm):
                 'minlength': 'Este campo debe tener al menos 10 caracteres.',
             },
         }
-

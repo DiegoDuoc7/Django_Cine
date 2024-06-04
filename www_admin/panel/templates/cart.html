@@ -21,7 +21,7 @@
           <tr>
             <td>{{ ticket.Id }}</td>
             <td>{{ ticket.movieName }}</td>
-            <td>{{ ticket.type }}</td>
+            <td>{% if ticket.type == 'child' %}Niño{% elif ticket.type == 'adult' %}Adulto{% else %}{{ ticket.type }}{% endif %}</td>
             <td>{{ ticket.quantity }}</td>
             <td>
               <a href="{% url 'delete_ticket' ticket.Id %}" class="btn btn-danger">Eliminar</a>
@@ -34,9 +34,22 @@
         <br>
       <h4>Total a pagar: {{ total }}</h4>
       <br>
+      <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Pagar Ahora</button>
+      </form>
+      <br>
+      {% if messages %}
+      <ul>
+          {% for message in messages %}
+             {{ message }}
+          {% endfor %}
+      </ul>
+      {% endif %}
+      <br><br>
     </div>
   </div>
-
 </div>
 </body>
 {% endblock %}
+

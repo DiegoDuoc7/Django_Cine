@@ -3,96 +3,91 @@
 {% block content %}
 <head>
   <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-</head>
-<body>
   <style>
     h1 { 
       text-align: center;
       color: black;
       margin-left: 20px;
-  }
+    }
   
-  p {
+    p {
       text-align: center;
       text-decoration: solid;
       font-size: 20px;
-  }
+    }
   
-  
-  .gallery {
+    .gallery {
       display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 600px;
-  }
+      flex-direction: row;
+      width: 100%;
+      height: 600px;
+    }
   
-  .item {
+    .item {
       flex: 0.5;
       height: 100%;
-      
-  }
+    }
   
-  .item:nth-child(1) {
+    .item:nth-child(1) {
       background-image: url("{% static 'imagenes/WhatsApp Image 2024-04-05 at 20.27.48.jpeg' %}");
-  }
+    }
   
-  .item:nth-child(2) {
+    .item:nth-child(2) {
       background-image: url("{% static 'imagenes/WhatsApp Image 2024-04-05 at 20.27.44.jpeg' %}");
-  }
+    }
   
-  .item:nth-child(3) {
+    .item:nth-child(3) {
       background-image: url("{% static 'imagenes/WhatsApp Image 2024-04-05 at 20.27.40.jpeg' %}");
-  }
-  .item, a .item {
+    }
+  
+    .item, a .item {
       background-position: center;
       background-size: cover;
       transition: flex 0.8s ease;
-  }
+    }
   
-  .item:hover, a .item:hover {
+    .item:hover, a .item:hover {
       flex: 1.5;
-  }
+    }
   </style>
+</head>
+<body>
+
     <!-- page content -->
-        <div class="right_col" role="main">
+    <div class="right_col" role="main">
 
-          <div class="container mt-5">
-            <br>
-            <h2 class="text-center text-primary mb-4" style="text-align: center; color: black; margin-left: 20px;">¡Bienvenido a Nuestro Cine!</h2>
-            <p class="text-center fs-5" style="text-align: center; text-decoration: solid; font-size: 20px;">Descubre las últimas películas, mira tráilers y encuentra horarios de funciones cerca de ti.</p>
-          
-            <div class="featured-movies mt-5">
-              <h3 class="text-secondary mb-3">Películas Destacadas</h3>
-              <div>
-<div class="gallery w-100">
-  <div class="item w-100">
-      <a href="{% url 'movies' 1 %}" class="w-100 h-100 d-block"></a>
-  </div>
-  <div class="item w-100">
-      <a href="{% url 'movies' 2 %}" class="w-100 h-100 d-block"></a>
-  </div>
-  <div class="item w-100">
-      <a href="{% url 'movies' 3 %}" class="w-100 h-100 d-block"></a>
-  </div>
-</div>
-
-
-
-
+      <div class="container mt-5">
+        <br>
+        <h2 class="text-center text-primary mb-4" style="text-align: center; color: black; margin-left: 20px;">¡Bienvenido a Nuestro Cine!</h2>
+        <p class="text-center fs-5" style="text-align: center; text-decoration: solid; font-size: 20px;">Descubre las últimas películas, mira tráilers y encuentra horarios de funciones cerca de ti.</p>
+      
+        <div class="featured-movies mt-5">
+          <h3 class="text-secondary mb-3">Películas Destacadas</h3>
+          <div>
+            <div class="gallery w-100">
+              <div class="item w-100">
+                <a href="{% url 'movies' 1 %}" class="w-100 h-100 d-block"></a>
+              </div>
+              <div class="item w-100">
+                <a href="{% url 'movies' 2 %}" class="w-100 h-100 d-block"></a>
+              </div>
+              <div class="item w-100">
+                <a href="{% url 'movies' 3 %}" class="w-100 h-100 d-block"></a>
               </div>
             </div>
-          
-            <div class="about-section mt-5 py-4 border-top">
-              <h3 class="text-secondary mb-3">Sobre Nosotros</h3>
-              <p>Estamos apasionados por las películas y queremos brindarte la mejor experiencia cinematográfica. Visita nuestra página de <a routerLink="/about" class="text-decoration-none">Acerca de</a> para aprender más.</p>
-            </div>
-          
-            <div class="contact-section mt-5 py-4 border-top">
-              <h3 class="text-secondary mb-3">Contáctanos</h3>
-              <p>¿Tienes preguntas o comentarios? Nos encantaría escuchar de ti. Contáctanos en nuestra página de <a routerLink="/contact" class="text-decoration-none">Contacto</a>.</p>
-            </div>
           </div>
-          
-                    </div>
-                    </body>
+        </div>
+      
+        <div class="about-section mt-5 py-4 border-top">
+          <h3 class="text-secondary mb-3">Sobre Nosotros</h3>
+          <p>Estamos apasionados por las películas y queremos brindarte la mejor experiencia cinematográfica. Visita nuestra página de <a href="{% url 'about' %}" class="text-decoration-none">Acerca de</a> para aprender más.</p>
+        </div>
+      
+        <div class="contact-section mt-5 py-4 border-top">
+          <h3 class="text-secondary mb-3">Contáctanos</h3>
+          <p>¿Tienes preguntas o comentarios? Nos encantaría escuchar de ti. Contáctanos en nuestra página de <a href="{% url 'contact' %}" class="text-decoration-none">Contacto</a>.</p>
+        </div>
+      </div>
+    </div>
+</body>
 {% endblock %}
