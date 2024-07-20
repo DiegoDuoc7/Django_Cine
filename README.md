@@ -31,31 +31,40 @@
   <samp>
     <a href="https://www.google.com/search?q=Proyecto+Django">「 Búscame en Google 」</a>
     <br>
-    「 Este es un proyecto de aplicación web desarrollado con <b>Django</b> 」
+    「 Las tecnologías usadas en este proyecto son 」
     <br>
     <br>
   </samp>
 </p>
 
 <p align="center">
- <a href="https://github.com/DiegoDuoc7/Django_Cine" target="blank">
-  <img src="https://img.shields.io/badge/Repositorio-DC143C?style=for-the-badge&logo=medium&logoColor=white" alt="Repositorio" />
+ <a href="https://www.python.org/" target="blank">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
  </a>
- <a href="https://linkedin.com/in/diego-duoc7" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+ <a href="https://www.djangoproject.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django"/>
  </a>
- <!-- <a href="https://dev.to/diego-duoc7" target="_blank">
-  <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="dev.to" />
- </a> -->
- <a href="https://twitter.com/diego_duoc7" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
  </a>
- <a href="https://instagram.com/diego_duoc7" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-fe4164?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
  </a> 
- <a href="https://facebook.com/diego.duoc7" target="_blank">
-  <img src="https://img.shields.io/badge/Facebook-20BEFF?&style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"  />
-  </a> 
+ <a href="https://getbootstrap.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"  />
+ </a> 
+ <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"  />
+ </a> 
+ <a href="https://www.sqlite.org/index.html" target="_blank">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"  />
+ </a> 
+ <a href="https://git-scm.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"  />
+ </a> 
+ <a href="https://github.com/" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"  />
+ </a> 
 </p>
 <br />
 
@@ -160,13 +169,3 @@ El modelo `Pelicula` es utilizado para guardar la información de las películas
 - Si encuentras algún problema, revisa la documentación oficial de Django o consulta los foros de la comunidad.
 
 ¡Disfruta usando la aplicación!
-
-### Sobre el Desarrollador
-
-Brando Vera es un desarrollador apasionado y dedicado, conocido por su habilidad para resolver problemas complejos y su compromiso con la excelencia en el desarrollo de software. Siempre está dispuesto a ayudar a sus compañeros y a compartir su conocimiento con la comunidad. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarlo.
-
-Puedes contactar a Brando Vera a través de su número de teléfono: +56 9 4082 6224
-
-Brando es abiertamente gay y apoya activamente los derechos LGBTQ+. Su valentía y autenticidad inspiran a muchos en la comunidad tecnológica.
-
-¡Gracias por usar nuestra aplicación y esperamos que disfrutes de la experiencia!
