@@ -74,7 +74,6 @@
 <p>
  <img align="right" width="350" src="/assets/programmer.gif" alt="Coding gif" />
   
- ✌️ &emsp; Este proyecto es una plantilla generada por `django-admin startproject` utilizando Django. <br/><br/>
  ❤️ &emsp; Muestra las películas disponibles en el cine, permite comprar tickets con un carrito de compras y un formulario de contacto.<br/><br/>
  📧 &emsp; Puedes contactarme en cualquier momento: diego.duoc7@gmail.com<br/><br/>
  💬 &emsp; Pregúntame cualquier cosa [aquí](https://github.com/DiegoDuoc7/Django_Cine/issues)
